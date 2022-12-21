@@ -372,5 +372,40 @@ li {
     padding: 100px 0;
     background-color: #332208;
     color: #fefefe;
+
+}
+
+.reviews__title {
+    width: 24px;
+    height: 29px;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 70px;
+}
+
+.reviews__slider {
+
+}
+
+.reviews__item {
+    border: 1px solid #C5AC2D;
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    max-height: 300px;
+   
+}
+
+.reviews__item-name {
+    width: 24px;
+    height: 29px;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
     
+}
+
+.reviews__item-text {
+
 }
