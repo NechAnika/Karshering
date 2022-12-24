@@ -394,8 +394,10 @@ li {
     flex-direction: column;
     justify-content: space-between;
     width: 270px;
-    max-height: 300px;
-   
+    height: 300px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .reviews__item-name {
@@ -403,8 +405,26 @@ li {
     height: 29px;
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
+
+}
+
+.reviews__slider .slick-dots button {
+    background-color: #C5AC2D;
+}
+
+.reviews__slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
     
 }
+
+.reviews__slider button {
+    margin: 0 5px;
+    line-height: 12px;
+}
+
 
 .reviews__item-text {
 
