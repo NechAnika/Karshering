@@ -248,6 +248,82 @@
     </div>
 </section>
 
+<section class="calculator">
+   <div class="container">
+        <div class="calculation">
+            <div class="calculation__data">
+                <h2 class="calculation__titel">Расчет стоимости аренды авто</h2>
+                <div class="calculation__value">
+                    <ul class="calculation__tarif">
+                        <li class="calculation__tarif-input">
+                            <input type="radio" name="tarif" id="econom" class=tarif value="econom"/>
+                            <label for="econom">Эконом</label>
+                        </li>
+                        <li class="calculation__tarif-input">
+                            <input type="radio" name="tarif" id="comfort" class=tarif value="comfort"/>
+                            <label for="comfort">Комфорт</label>
+                        </li>
+                        <li class="calculation__tarif-input">
+                            <input type="radio" name="tarif" id="bisnes" class=tarif value="bisnes"/>
+                            <label for="Бbisnes">Бизнес</label>
+                        </li>
+                        <li class="calculation__tarif-input">
+                            <input type="radio" name="tarif" id="prem" class=tarif value="prem"/>
+                            <label for="prem">Премиум</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculation__clock">
+                    <h3 class="calculation__duration">На сколько часов аренда (минимуи 1 час)</h3>
+                    <input type="range" name="time" id="time" step="1" min="1" max="96" value="2" />
+                    <output id="volume" for="time">2</output>
+                </div>
+                <div class="calculation__parameters">
+                    <h3 class="calculation__dopparametrs">Дополнительные параметры</h3>
+                    <div class="calculation_parametrs-value">
+                        <input type="checkbox" name="parametr1" id="parametr1" class="parameters" />
+                        <label for="parametr1" class="calculation__function"></label>
+                        <label for="parametr1">Подача далее 15 км от города</label>
+                    </div>
+                    <div class="calculation_parametrs-value">
+                        <input type="checkbox" name="parametr2" id="parametr2" class="parameters" />
+                        <label for="parametr2" class="calculation__function"></label>
+                        <label for="parametr2">Детское кресло</label>
+                    </div>
+                    <div class="calculation_parametrs-value">
+                        <input type="checkbox" name="parametr3" id="parametr3" class="parameters" />
+                        <label for="parametr3" class="calculation__function"></label>
+                        <label for="parametr3">Дополнительная страховка</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calculation__results">
+                <h2 class="calculation__titel">Ваш заказ</h2>
+                <div class="calculation__list">
+                     <h3 class="calculation__tarif-output">Тариф</h3>
+                     <output class="calculation__order" id="calculation__order-tarif">
+                        &#8212;
+                     </output>
+                </div>
+                <div class="calculation__list">
+                    <h3 class="calculation__tarif-output">Срок аренды</h3>
+                    <output class="calculation__order" id="calculation__order-function">
+                       &#8212;
+                    </output>
+               </div>
+               <div class="calculation__list">
+                    <h3 class="calculation__tarif-output">Дополнительно</h3>
+                    <output class="calculation__order" id="calculation__order-value">
+                    &#8212;
+                    </output>
+                </div>
+                <input class="calculation__btn1" type="submit" title="Расчитать стоимость" value="Расчитать стоимость 1 вариант"/>
+                <input class="calculation__btn2" type="submit" title="Расчитать стоимость" value="Расчитать стоимость 2 вариант"/>
+            </div>
+        </div>
+   </div>
+</section>
+
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

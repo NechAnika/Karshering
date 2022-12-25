@@ -387,6 +387,10 @@ li {
 
 }
 
+.slick-initializate .reviews__item {
+    display: flex;
+}
+
 .reviews__item {
     border: 1px solid #C5AC2D;
     padding: 45px 30px;
@@ -401,7 +405,6 @@ li {
 }
 
 .reviews__item-name {
-    width: 24px;
     height: 29px;
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
@@ -425,7 +428,28 @@ li {
     line-height: 12px;
 }
 
+.calculator {
+    padding: 100px 0;
+}
 
-.reviews__item-text {
+.calculation {
+    display: flex;
+}
 
+.calculation__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.calculation__results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.calculation__tarif-input {
+    color: #1B1818;
 }
