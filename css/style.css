@@ -291,7 +291,7 @@ li {
 }
 
 .benefit__list {
-    width: 300px;
+    width: 100$;
     list-style: none;
 }
 
@@ -303,8 +303,8 @@ li {
     text-align: right;
 }
 
-.benefit__list-item ::after {
-    content '';
+.benefit__list-item::after {
+    content: '';
     position: absolute;
     width: 16px;
     height: 16px;
@@ -313,6 +313,7 @@ li {
     right: 0;
     top: 3px;
 }
+
 
 .benefit__list-item:nth-child(1),
 .benefit__list-item:nth-child(7) {
@@ -332,7 +333,6 @@ li {
 .benefit__list-item:nth-child(4) {
     margin-right: 160px;
 }
-
 
 .benefit__content {
     width: 300px;
@@ -479,7 +479,6 @@ li {
 
 
 
-
 .questions {
     padding: 100px 0;
 }
@@ -576,9 +575,63 @@ margin: 0 auto;
     display: none;
 }
 
+@media (max-width:1250px) {
+    .benefit__images {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:1140px) {
+    .rent__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .rent__content {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width:1000px) {
+    .top__heading { 
+        display: block;
+    }
+    .top__content {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .top__slaider {
+        width: 100%;
+
+    }
+    .top__bottom {
+        display: block;
+    }
+    .top__links {
+        padding-right: 0;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .top__items {
+        width: 100%;
+    }
+    .benefit__images {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .benefit__items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefit__text + .benefit__text {
+        width: 100%;
+    }
+}
+
 @media (max-width:860px) {
-.menu {
-    order: 1;
+    .menu {
+        order: 1;
 }
 
     .menu__list {
@@ -624,4 +677,82 @@ margin: 0 auto;
         left: 0;
         top: 9px;
     }
+
+    .rent__item {
+        margin: 30px;
+    }
+
+    .fquestions__image {
+        display: none;
+    }
 }
+
+@media (max-width:650px) {
+    .rent__item {
+        width: 100%;
+        min-width: 245px;
+    }
+    .rent__item-title {
+        margin-bottom: 20px;
+    }
+    .rent__content {
+        text-align: center;
+    }
+}
+
+@media (max-width:526px) {
+    .top__items {
+        flex-wrap: wrap;
+    }
+    .top__item {
+        margin: 20px;
+    }
+    .top__slaider-text {
+        padding-right: 0;
+    }
+    .benefit__items {
+        width: 70%;
+    }
+    .benefit__list {
+        margin-left: 40px;
+    }
+    .benefit__list-item {
+        margin-right: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 26px;
+    }
+    .benefit__list-item::after {
+        content: '';
+        right: auto;
+        left: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:410px) {
+    .top__item {
+        width: 100%;
+        min-height: 120px;
+    }
+    .top__links {
+    text-align: center;
+    }
+    .top__link {
+    display: inline-block;
+    margin: 10px 16px;
+    }
+    .top__link + .top__link {
+        margin-left: 0;
+    }
+    .top__slaider-text {
+        text-align: right;
+    }
+    .top__slaider-text span {
+        display: block;
+    }
+    .rent__item {
+        margin: 30px 0;
+    }
+}
+ */
