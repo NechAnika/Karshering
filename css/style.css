@@ -597,6 +597,9 @@ margin: 0 auto;
     .top__heading { 
         display: block;
     }
+    .footer .menu{
+        display: none;
+    }
     .top__content {
         width: 100%;
         padding-top: 30px;
@@ -630,6 +633,7 @@ margin: 0 auto;
 }
 
 @media (max-width:860px) {
+   
     .menu {
         order: 1;
 }
@@ -682,8 +686,15 @@ margin: 0 auto;
         margin: 30px;
     }
 
-    .fquestions__image {
+    .questions__image {
         display: none;
+    }
+    .footer,
+    .questions,
+    .reviews,
+    .benefits,
+    .rent {
+        padding: 50px 0;
     }
 }
 
@@ -729,6 +740,15 @@ margin: 0 auto;
         margin-left: 0px;
     }
 }
+@media (max-width:450px) {
+    .footer__top {
+        flex-direction: column;
+    }
+    .footer .phone {
+        margin-top: 30px;
+        display: inline-block;
+    }
+}
 
 @media (max-width:410px) {
     .top__item {
@@ -755,4 +775,4 @@ margin: 0 auto;
         margin: 30px 0;
     }
 }
- */
+
