@@ -10,9 +10,10 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 </head>
 <body>
-    
+   
 <header class="header">
 
     <div class="container">
@@ -35,7 +36,9 @@
     </div>
 
 </header>
-
+<div id="dka">
+    {{ info }}
+</div>
 <section class="top">
     <div class="container">
         <div class="top__heading">
@@ -373,6 +376,21 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#dka',
+        data() {
+            return {
+            info: null
+            };
+        },
+        mounted() {
+            axios
+            .get('https://techlab.rarus.ru/api/v1/interview/calculator/config/')
+            .then(response => (this.info = response));
+        }
+});
+</script>
 </body>
 </html>
